@@ -27,7 +27,7 @@ platform :ios do
  
     gym(scheme: 'Weather', project: "Weather.xcodeproj", clean: true, silent: true, include_bitcode: false, export_method: 'ad-hoc')
  
-    emails = values[:aditi.desai@silicus.com] ? values[:aditidesai0504@gmail.com] : ['[email]'] # You can list more emails here
+    emails = values[:'[aditi.desai@silicus.com]'] ? values[:'[aditidesai0504@gmail.com]'] : ['[email]'] # You can list more emails here
     groups = values[:test_email] ? nil : nil # You can define groups on the web and reference them here
  
     crashlytics(api_token: '[d599b71567ffc7b185a1e1d2d13058413b5397ff]',
